@@ -1,322 +1,142 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glowora Beauty | Natural Beauty</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      color: #25212a;
-      background: #fffafa;
-      line-height: 1.6;
-    }
-
-    header {
-      background: white;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      box-shadow: 0 2px 10px #eadde2;
-    }
-
-    .logo {
-      font-size: 25px;
-      font-weight: bold;
-      color: #ec477b;
-    }
-
-    nav a {
-      color: #333;
-      text-decoration: none;
-      margin: 0 9px;
-    }
-
-    .hero {
-      padding: 65px 7%;
-      background: linear-gradient(120deg, #ffe5ee, #fff7f9);
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: clamp(34px, 7vw, 55px);
-      color: #d9366b;
-      margin-bottom: 12px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      max-width: 560px;
-      margin: 0 auto 22px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #ed477b;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 30px;
-      border: none;
-      text-decoration: none;
-      cursor: pointer;
-      font-size: 15px;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      padding: 25px 7%;
-      text-align: center;
-      background: white;
-    }
-
-    .features div {
-      padding: 12px;
-    }
-
-    section {
-      padding: 45px 7%;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 25px;
-    }
-
-    .section-title h2 {
-      font-size: 30px;
-      color: #d9366b;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .product {
-      background: white;
-      border: 1px solid #f3dce5;
-      border-radius: 12px;
-      overflow: hidden;
-      text-align: center;
-      padding-bottom: 16px;
-    }
-
-    .product .photo {
-      background: #ffedf2;
-      font-size: 65px;
-      padding: 28px 5px;
-    }
-
-    .product h3 {
-      font-size: 16px;
-      margin: 10px 4px 3px;
-    }
-
-    .price {
-      color: #c72c5d;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .product .btn {
-      padding: 9px 13px;
-      margin: 0 8px;
-    }
-
-    .about {
-      background: #fff0f5;
-      text-align: center;
-    }
-
-    .about p {
-      max-width: 650px;
-      margin: 12px auto 20px;
-    }
-
-    .cart {
-      text-align: center;
-      background: white;
-    }
-
-    footer {
-      background: #25212a;
-      color: white;
-      text-align: center;
-      padding: 28px 15px;
-    }
-
-    footer p {
-      color: #f7c6d6;
-      margin-top: 6px;
-    }
-
-    @media (min-width: 700px) {
-      .features {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      .products {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
-      .hero {
-        padding: 90px 7%;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glowora Beauty | Online Beauty Shop</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#fffafa;color:#333}
+.top{background:#8e2459;color:white;text-align:center;padding:10px;font-size:14px}
+header{padding:16px;background:white;text-align:center}
+.logo{font-size:29px;font-weight:bold;color:#a52c69}
+header p{margin:5px;color:#777;font-size:13px}
+.search{display:flex;margin:12px auto;max-width:600px;padding:0 12px}
+.search input{width:100%;padding:12px;border:1px solid #ddd;border-radius:8px}
+nav{display:flex;justify-content:center;gap:22px;background:#f9e7ef;padding:14px;flex-wrap:wrap}
+nav a{color:#7d214f;text-decoration:none;font-weight:bold;font-size:14px}
+.hero{padding:35px 20px;text-align:center;background:linear-gradient(120deg,#f8d9e7,#fff1f5)}
+.hero h1{color:#8e2459;font-size:30px;margin:8px}
+.hero p{line-height:1.7}
+.btn{display:inline-block;background:#9d285f;color:white;padding:12px 20px;border:0;border-radius:6px;text-decoration:none;cursor:pointer}
+h2{text-align:center;color:#8e2459;margin:30px 0 20px}
+.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;padding:12px;max-width:1000px;margin:auto}
+.card{background:white;border:1px solid #f0e1e8;border-radius:10px;overflow:hidden;padding-bottom:14px;text-align:center}
+.card img{width:100%;height:175px;object-fit:cover;background:#f8eaf0}
+.card h3{font-size:15px;margin:12px 5px}
+.price{color:#a52c69;font-weight:bold;margin:8px}
+.card button{margin:4px;padding:9px 10px}
+.cart{background:#fff0f6;padding:20px;margin-top:25px;text-align:center}
+footer{background:#50172f;color:white;text-align:center;padding:25px 15px;line-height:1.8}
+@media(min-width:650px){.products{grid-template-columns:repeat(4,minmax(0,1fr))}.card img{height:220px}.hero h1{font-size:40px}}
+</style>
 </head>
-
 <body>
 
-  <header>
-    <div class="logo">♡ Glowora Beauty</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#shop">Shop</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<div class="top">✨ Glowora Beauty — আপনার সৌন্দর্যের বিশ্বস্ত ঠিকানা ✨</div>
 
-  <main>
-    <section class="hero" id="home">
-      <h1>Glowora Beauty</h1>
-      <p>Natural skincare & beauty products for your perfect glow.</p>
-      <p>Discover your beauty with gentle skincare and everyday essentials.</p>
-      <a href="#shop" class="btn">Shop Now →</a>
-    </section>
+<header>
+  <div class="logo">Glowora Beauty</div>
+  <p>Beauty • Skincare • Makeup</p>
+</header>
 
-    <div class="features">
-      <div>🌿<br><b>Natural Care</b><br>Gentle skincare</div>
-      <div>🛡️<br><b>Quality First</b><br>Carefully selected</div>
-      <div>🚚<br><b>Fast Delivery</b><br>Convenient shopping</div>
-      <div>♡<br><b>Customer Care</b><br>Here to help</div>
-    </div>
+<div class="search">
+  <input id="search" type="search" placeholder="পণ্যের নাম লিখে খুঁজুন..."
+  oninput="searchProducts()">
+</div>
 
-    <section id="shop">
-      <div class="section-title">
-        <h2>Our Best Sellers</h2>
-        <p>Find your everyday beauty essentials.</p>
-      </div>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#products">Products</a>
+  <a href="#cart">My Cart (<span id="count">0</span>)</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-      <div class="products">
-        <article class="product">
-          <div class="photo">🧴🌸</div>
-          <h3>Glowora Face Cream</h3>
-          <p class="price">৳ 850</p>
-          <button class="btn" onclick="addToCart('Glowora Face Cream',850)">
-            Add to Cart
-          </button>
-        </article>
+<section class="hero" id="home">
+  <h1>Welcome to Glowora Beauty</h1>
+  <p>আপনার পছন্দের Beauty ও Skincare Products কিনুন সহজেই।</p>
+  <a class="btn" href="#products">Shop Now</a>
+</section>
 
-        <article class="product">
-          <div class="photo">✨🧪</div>
-          <h3>Glowora Face Serum</h3>
-          <p class="price">৳ 1,200</p>
-          <button class="btn" onclick="addToCart('Glowora Face Serum',1200)">
-            Add to Cart
-          </button>
-        </article>
+<h2 id="products">Our Products</h2>
 
-        <article class="product">
-          <div class="photo">🌿🧴</div>
-          <h3>Glowora Face Wash</h3>
-          <p class="price">৳ 650</p>
-          <button class="btn" onclick="addToCart('Glowora Face Wash',650)">
-            Add to Cart
-          </button>
-        </article>
+<div class="products" id="productList"></div>
 
-        <article class="product">
-          <div class="photo">🌸💗</div>
-          <h3>Glowora Lip Balm</h3>
-          <p class="price">৳ 450</p>
-          <button class="btn" onclick="addToCart('Glowora Lip Balm',450)">
-            Add to Cart
-          </button>
-        </article>
-      </div>
-    </section>
+<section class="cart" id="cart">
+  <h2>🛒 আপনার শপিং কার্ট</h2>
+  <div id="cartItems">এখনো কোনো পণ্য যোগ করা হয়নি।</div>
+  <p id="total">মোট: ৳0</p>
+  <button class="btn" onclick="orderWhatsApp()">WhatsApp-এ অর্ডার করুন</button>
+</section>
 
-    <section class="about" id="about">
-      <h2>Beauty with a Purpose</h2>
-      <p>
-        Welcome to Glowora Beauty! We believe beauty starts
-        with self-care. Explore our beauty collection and find
-        your favorites for your daily routine.
-      </p>
-      <a href="#shop" class="btn">Explore Products</a>
-    </section>
-
-    <section class="cart" id="cart">
-      <h2>Your Shopping Cart 🛒</h2>
-      <p id="cart-items">Your cart is empty.</p>
-      <h3 id="cart-total">Total: ৳ 0</h3>
-      <button class="btn" onclick="checkout()">Place Order</button>
-      <p id="order-message"></p>
-    </section>
-  </main>
-
-    <h2>♡ Glowora Beauty</h2>
-    <p>Natural Beauty • Brighter You</p>
-    <p>Contact us to learn more about our products.</p>
-    <p>© 2026 Glowora Beauty. All 
-<footer>
-  <h3>Contact Us</h3>
-  <p>Glowora Beauty</p>
-  <p>Phone: 8801727793913</p>
-  <a href="tel:8801727793913">Call Us</a>
-  <br><br>
-  <a href="https://wa.me/8801727793913">
-    Order on WhatsApp
-  </a>
+<footer id="contact">
+  <h2 style="color:white">Glowora Beauty</h2>
+  <p>আপনার সৌন্দর্য, আমাদের যত্ন ❤️</p>
+  <p>অর্ডার ও যোগাযোগের জন্য WhatsApp করুন</p>
   <p>© 2026 Glowora Beauty</p>
-</footer></p>
-  </footer>
+</footer>
 
-  <script>
-    const cart = [];
+<script>
+const products = [
+ {name:"Face Wash",price:450,img:"https://placehold.co/400x400/f8e3ed/8e2459?text=Face+Wash"},
+ {name:"Face Serum",price:650,img:"https://placehold.co/400x400/f8e3ed/8e2459?text=Face+Serum"},
+ {name:"Moisturizer",price:550,img:"https://placehold.co/400x400/f8e3ed/8e2459?text=Moisturizer"},
+ {name:"Sunscreen",price:700,img:"https://placehold.co/400x400/f8e3ed/8e2459?text=Sunscreen"},
+ {name:"Lipstick",price:350,img:"https://placehold.co/400x400/f8e3ed/8e2459?text=Lipstick"},
+ {name:"Face Cream",price:500,img:"https://placehold.co/400x400/f8e3ed/8e2459?text=Face+Cream"},
+ {name:"Toner",price:400,img:"https://placehold.co/400x400/f8e3ed/8e2459?text=Toner"},
+ {name:"Beauty Combo",price:1200,img:"https://placehold.co/400x400/f8e3ed/8e2459?text=Beauty+Combo"}
+];
 
-    function addToCart(name, price) {
-      cart.push({ name, price });
-      updateCart();
-      document.getElementById('cart').scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
+let cart = [];
 
-    function updateCart() {
-      const items = document.getElementById('cart-items');
-      const total = cart.reduce((sum, item) => sum + item.price, 0);
+function showProducts(list=products){
+ document.getElementById("productList").innerHTML=list.map(p=>`
+ <div class="card">
+ <img src="${p.img}" alt="${p.name}">
+ <h3>${p.name}</h3>
+ <div class="price">৳${p.price}</div>
+ <button class="btn" onclick="addCart('${p.name}')">Add to Cart</button>
+ </div>`).join("");
+}
 
-      items.textContent = cart.length
-        ? cart.map(item => item.name + ' - ৳ ' + item.price).join(' | ')
-        : 'Your cart is empty.';
+function searchProducts(){
+ const q=document.getElementById("search").value.toLowerCase();
+ showProducts(products.filter(p=>p.name.toLowerCase().includes(q)));
+}
 
-      document.getElementById('cart-total').textContent =
-        'Total: ৳ ' + total.toLocaleString('en-BD');
-    }
+function addCart(name){
+ const p=products.find(x=>x.name===name);
+ cart.push(p);
+ updateCart();
+}
 
-    function checkout() {
-      document.getElementById('order-message').textContent =
-        cart.length
-          ? 'Your cart is ready. Contact the store to confirm your order.'
-          : 'Please add a product first.';
-    }
-  </script>
+function updateCart(){
+ document.getElementById("count").textContent=cart.length;
+ document.getElementById("cartItems").innerHTML=cart.length?
+ cart.map((p,i)=>`${i+1}. ${p.name} — ৳${p.price} 
+ <button onclick="removeCart(${i})">Remove</button>`).join("<br>"):
+ "এখনো কোনো পণ্য যোগ করা হয়নি।";
+ document.getElementById("total").textContent=
+ "মোট: ৳"+cart.reduce((sum,p)=>sum+p.price,0);
+}
 
+function removeCart(i){
+ cart.splice(i,1);
+ updateCart();
+}
+
+function orderWhatsApp(){
+ if(!cart.length){alert("আগে কার্টে পণ্য যোগ করুন।");return;}
+ const phone="8801XXXXXXXXX";
+ const items=cart.map(p=>p.name+" - Tk "+p.price).join("\n");
+ const total=cart.reduce((s,p)=>s+p.price,0);
+ const msg="Glowora Beauty Order:\n"+items+"\nTotal: Tk "+total;
+ window.open("https://wa.me/"+phone+"?text="+encodeURIComponent(msg),"_blank");
+}
+
+showProducts();
+</script>
 </body>
 </html>
